@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dimensões</title>
+    <style>
+        .texto {
+            width: 150px;
+            height: 200px;
+            overflow: auto;
+            padding: 20px;
+            background-color: gray;
+        }
+        .texto2 {
+            margin-top: 400px;
+            text-align: justify;
+        }
+        .backtotop {
+            background-color: blue;
+            border-color: blue;
+            margin-top: 10px;
+            border-radius: 10px;
+            position: fixed;
+            right: 20px;
+            bottom: 10px;
+            z-index: 999;
+            cursor: pointer;
+            padding: 5px;
+        }
+        .backtotop:hover {
+            background-color: rgb(0, 195, 255);
+            border-color: rgb(0, 195, 255);
+        }
+        .backtotop:active {
+            background-color: rgb(0, 255, 234);
+            border-color: rgb(0, 255, 234);
+        }
+    </style>
+    <script src="JS/main.js"></script>
+</head>
+<body onload="loadscroll()">
+    <div class="texto">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto unde modi ea quas sint magnam eligendi, perferendis sequi nobis amet ipsum ab perspiciatis, repellendus veritatis ex veniam. Eveniet, quo sunt?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum repudiandae dolor enim doloribus provident explicabo quibusdam, cumque facilis excepturi sit, quisquam, iure nulla. Eum amet repellendus adipisci nisi possimus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, tempora perferendis placeat, explicabo fugit asperiores nemo excepturi minima reiciendis, provident officia consequuntur unde dolorum corporis quas dicta veniam architecto quo.
+    </div>
+    <div class="texto2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel id sit officia eius neque blanditiis velit doloremque ab. Voluptatibus iure cum nulla non praesentium eos deserunt, vero a possimus ea.lorem
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A at ea ullam quaerat reprehenderit aperiam laboriosam, illum amet fugit ipsa labore fugiat fuga, cupiditate quas aspernatur id, quasi corrupti dolorum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ut nostrum quibusdam doloribus aliquid vitae impedit in vero ipsam sunt commodi possimus? Enim illo ex aliquam ut rerum eos molestias?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto consectetur hic ratione. Voluptate, at? Accusantium, quo! Voluptatem impedit qui modi sunt, odio quas! Cumque saepe voluptatem quos vel ad natus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ad. Culpa quam ut non facere quae rerum nobis tempore, necessitatibus eius, harum corrupti quasi quibusdam modi? Alias quidem aperiam vel!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus totam eaque quis alias debitis sit earum aliquid aliquam sint, et nihil saepe voluptatem ab aut adipisci in culpa harum rerum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, maxime. Ipsam dolorem quam necessitatibus magni optio provident repellat earum rerum. Accusantium debitis expedita porro ipsa quidem? Vel nulla quasi vitae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, tempore voluptatibus dolorem ipsa earum at nisi sint hic, eum, excepturi quidem culpa provident est aperiam quas praesentium dolor. Qui, voluptatem!
+    </div>
+    <button class="backtotop" onclick="backtotop()">Back To Menu</button>
+</body>
+</html>

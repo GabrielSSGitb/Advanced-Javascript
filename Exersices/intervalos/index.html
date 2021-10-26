@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timers</title>
+    <script src="inter1.js"></script>
+    <style>
+        * {
+           margin: 0;
+           padding: 0;
+        }
+       #demo {
+            background-image: linear-gradient(to bottom, blue, rgb(0, 195, 255));
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: none;
+        }
+        #video {
+            margin-top: 50px;
+            text-align: center;
+            display: none;
+        }
+        button {
+            margin-top: 50px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+        h1 {
+           margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="demo"></div>
+    </header>
+    <h1>Welcome!</h1>
+    <button onclick="comercar()">Começar</button>
+    <button onclick="parar()">Parar</button>
+    <div id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NUYvbT6vTPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XBDV2UPTINc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

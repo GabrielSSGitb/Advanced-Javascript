@@ -1,0 +1,59 @@
+@charset "utf-8";
+body {
+    font-family: "Arial", Serif;
+    background-color: #f4f4f4;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  #links {
+    display: none;
+  }
+.navbar {
+    background-image: linear-gradient(to right, #AD04DB, #8503A8);
+    overflow: hidden; 
+    height: 63px;
+}
+.navbar a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 14px 16px;
+  font-size: 20px;
+  transition: all ease 0.5s;
+}
+.navbar ul {
+  margin: 8px 0 0 0;
+  list-style: none;
+}
+#svg:hover {
+  margin-left: 5px;
+  width: 50px;
+}
+.navbar a:hover {
+  background-color: white;
+  color: gray;
+  width: 80px;
+  border-radius: 10px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #db5dfd;
+}
+.sidenav a {
+  padding: 10px 10px 10px 30px;
+  display: block;
+  font-size: 22px;
+  float: unset;
+  text-align: left;
+  transition: all ease 0.5s;
+}
+#close:hover {
+  background-color: #db5dfd;
+  color: #8503A8;
+}
