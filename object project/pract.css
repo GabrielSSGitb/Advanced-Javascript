@@ -1,0 +1,72 @@
+@charset "utf-8";
+* {
+    margin: 0;
+}
+body {
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+#header {
+    background-image: linear-gradient(to bottom, blue, lightskyblue);
+    text-align: center;
+    padding: 10px;
+}
+#showname {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 80px;
+}
+.main {
+    width: 300px;
+    height: 100px;
+    margin-left: 450px;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: rgb(0, 153, 255);
+    border-radius: 10px;
+}
+.main p {
+    margin-bottom: 5px;
+}
+#askname {
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 40px;
+    background-color: white;
+    border-color:  lightskyblue;
+    outline: 0;
+}
+.verificar {
+    background-color: rgb(0, 234, 255);
+    border-color: rgb(0, 234, 255);
+    padding: 4px;
+    color: white;
+    font-weight: bold;
+}
+.verificar:hover {
+    background-color: rgb(207, 251, 249);
+    border-color: rgb(207, 251, 249);
+    color: blue;
+}
+.verificar:active {
+    background-color: blue;
+    border-color: blue;
+    color: white;
+}
+#table {
+    margin-left: 400px;
+    margin-top: 20px;
+    margin-right: 300px;
+}
+table tr, th, td {
+    border: -1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+}
+th {
+    background-color: black;
+}
+td {
+    background-color: lightskyblue;
+}
