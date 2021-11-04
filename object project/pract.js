@@ -18,6 +18,7 @@ let garconete = {
     nome: "Fernanda",
     sobrenome: "Santos",
     cargo: "Garçonete",
+    idade: 35,
     maisinfo: {
        mãe: "Juseline",
        pai: "Marcos",
@@ -29,7 +30,9 @@ let garconete = {
         facebook: "FernandaDosSantos444"
     }
 };
-var {nome, sobrenome, idade = 32, cargo, maisinfo:{cidade}, maisinfo:{bairro}} = gerente;
+var {nome, sobrenome, idade = 32, cargo, maisinfo:{cidade}, maisinfo:{bairro},
+    social:{Instagram}, social:{facebook}
+    } = gerente;
 
 function searchuser() {
    // var tbody = document.querySelector('#tbody');
@@ -40,7 +43,7 @@ function searchuser() {
         
     }else if(askname == 'Augusto' || 'Fernanda') {
         document.querySelector('.main').style.display= 'none';
-        document.querySelector('#showname').innerHTML = `👨‍✈️ ${nome} ${sobrenome}: `;
+       var name = document.querySelector('#showname').innerHTML = `👨‍✈️ ${nome} ${sobrenome}: `;
     
         var html = `
           <table>
@@ -49,15 +52,27 @@ function searchuser() {
              <th>Idade</th>
              <th>Cidade</th>
              <th>Bairro</th>
+             <th>Instagram</th>
+             <th>FaceBook</th>
            </tr>
            <tr>
              <td>${cargo}</td>
              <td>${idade}</td>
              <td>${cidade}</td>
              <td>${bairro}</td>
+             <td>${Instagram}</td>
+             <td>${facebook}</td>
            </tr>
           </table>
         `;
+        var table = document.querySelector('#table').innerHTML = html;
+    }else if(askname == "Fernanda") {
+      document.querySelector('.main').style.display= 'none';
+      var html2 = `
+      
+      `;
+      table.innerHTML = htm2;
     }
-    document.querySelector('#table').innerHTML = html;
-};
+      
+    };
+    

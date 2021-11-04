@@ -59,9 +59,10 @@ body {
     margin-right: 300px;
 }
 table tr, th, td {
-    border: -1px solid black;
+    border: 1px solid black;
     border-collapse: collapse;
-    width: 50%;
+    width: 100%;
+    padding: 5px 5px;
     text-align: center;
 }
 th {
