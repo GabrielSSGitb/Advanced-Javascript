@@ -53,21 +53,23 @@ body {
     border-color: blue;
     color: white;
 }
-#table {
-    margin-left: 400px;
-    margin-top: 20px;
-    margin-right: 300px;
-}
-table tr, th, td {
+table, tr, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     width: 100%;
-    padding: 5px 5px;
     text-align: center;
 }
 th {
-    background-color: black;
+    padding: 3px 50px;
+    background-color: darkblue;
 }
 td {
-    background-color: lightskyblue;
+    background-color: rgb(67, 95, 255);
+}
+footer {
+    text-align: center;
+    margin-top: 200px;
+}
+footer img {
+    width: 20px;
 }

@@ -14,20 +14,20 @@ let gerente = {
        }
 };
 
-let garconete = {
-    nome: "Fernanda",
-    sobrenome: "Santos",
-    cargo: "Garçonete",
-    idade: 35,
-    maisinfo: {
+let garçonete = {
+    nome2: "Fernanda",
+    sobrenome2: "Santos",
+    cargo2: "Garçonete",
+    idade2: 35,
+    maisinfo2: {
        mãe: "Juseline",
        pai: "Marcos",
-       cidade: "São Paula",
-       bairro: "Paraibas N°122"
+       cidade2: "São Paulo",
+       bairro2: "Paraibas N°122"
     },
-    social: {
-        Instagram: "FernandaSantos444",
-        facebook: "FernandaDosSantos444"
+    social2: {
+        Instagram2: "FernandaSantos444",
+        facebook2: "FernandaDosSantos444"
     }
 };
 var {nome, sobrenome, idade = 32, cargo, maisinfo:{cidade}, maisinfo:{bairro},
@@ -35,44 +35,60 @@ var {nome, sobrenome, idade = 32, cargo, maisinfo:{cidade}, maisinfo:{bairro},
     } = gerente;
 
 function searchuser() {
-   // var tbody = document.querySelector('#tbody');
-   var table = document.querySelector('#table');
-   var askname = document.querySelector('#askname').value;
-    if(askname == '') {
-        alert('PorFavor, digite um usuário!!!')
-        
-    }else if(askname == 'Augusto' || 'Fernanda') {
-        document.querySelector('.main').style.display= 'none';
-       var name = document.querySelector('#showname').innerHTML = `👨‍✈️ ${nome} ${sobrenome}: `;
-    
-        var html = `
-          <table>
-           <tr>
-             <th>Cargo</th>
-             <th>Idade</th>
-             <th>Cidade</th>
-             <th>Bairro</th>
-             <th>Instagram</th>
-             <th>FaceBook</th>
-           </tr>
-           <tr>
-             <td>${cargo}</td>
+    var askname = document.querySelector('#askname').value;
+    if (askname == '') {
+      alert('Porfavor, digite um usuário!!!')
+    }else if (askname == 'Augusto') {
+      document.querySelector('.main').style.display= 'none';
+     document.querySelector('#showname').innerHTML= `👨‍✈️ ${nome} ${sobrenome}:`;
+     
+     var html = `
+        <table>
+            <thead>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Idade</th>
+            <th>Cargo</th>
+            <th>Cidade</th>
+            <th>Bairro</th>
+            </thead>
+            <tr>
+             <td>${nome}</td>
+             <td>${sobrenome}</td>
              <td>${idade}</td>
+             <td>${cargo}</td>
              <td>${cidade}</td>
              <td>${bairro}</td>
-             <td>${Instagram}</td>
-             <td>${facebook}</td>
-           </tr>
-          </table>
-        `;
-        var table = document.querySelector('#table').innerHTML = html;
-    }else if(askname == "Fernanda") {
+             
+            </tr>
+        </table>
+     `;
+     document.querySelector('#table').innerHTML = html;
+    }else if (askname == 'Fernanda') {
+      var {
+        nome2, sobrenome2, cargo2, maisinfo2:{cidade2}, maisinfo2:{bairro2}, social2:{Instagram2}, social2:{facebook2}, idade2} = garçonete;
       document.querySelector('.main').style.display= 'none';
-      var html2 = `
-      
+      document.querySelector('#showname').innerHTML= `👩‍✈️ ${nome2} ${sobrenome2}`;
+      html = `
+      <table>
+      <thead>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Idade</th>
+            <th>Cargo</th>
+            <th>Cidade</th>
+            <th>Bairro</th>
+      </thead>
+      <tr>
+             <td>${nome2}</td>
+             <td>${sobrenome2}</td>
+             <td>${idade2}</td>
+             <td>${cargo2}</td>
+             <td>${cidade2}</td>
+             <td>${bairro2}</td>
+            </tr>
+      </table>
       `;
-      table.innerHTML = htm2;
+      document.querySelector('#table').innerHTML = html;
     }
-      
-    };
-    
+};
