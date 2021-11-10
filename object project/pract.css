@@ -69,7 +69,21 @@ td {
 footer {
     text-align: center;
     margin-top: 200px;
+    display: none;
 }
 footer img {
-    width: 20px;
+    width: 15px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+footer a:hover {
+    color: rgb(155, 155, 155);
+    text-decoration: underline gray;
+}
+footer a:active {
+    color: white;
+    text-decoration: underline white;
 }

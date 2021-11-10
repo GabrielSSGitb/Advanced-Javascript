@@ -41,7 +41,9 @@ function searchuser() {
     }else if (askname == 'Augusto') {
       document.querySelector('.main').style.display= 'none';
      document.querySelector('#showname').innerHTML= `👨‍✈️ ${nome} ${sobrenome}:`;
-     
+     document.querySelector('#redes').style.display= 'block';
+     document.querySelector('#instatext').innerHTML = `${Instagram}`;
+     document.querySelector('#facetext').innerHTML = `${facebook}`;
      var html = `
         <table>
             <thead>
@@ -69,6 +71,9 @@ function searchuser() {
         nome2, sobrenome2, cargo2, maisinfo2:{cidade2}, maisinfo2:{bairro2}, social2:{Instagram2}, social2:{facebook2}, idade2} = garçonete;
       document.querySelector('.main').style.display= 'none';
       document.querySelector('#showname').innerHTML= `👩‍✈️ ${nome2} ${sobrenome2}`;
+      document.querySelector('#redes').style.display= 'block';
+      document.querySelector('#instatext').innerHTML = `${Instagram2}`;
+      document.querySelector('#facetext').innerHTML = `${facebook2}`;
       html = `
       <table>
       <thead>
