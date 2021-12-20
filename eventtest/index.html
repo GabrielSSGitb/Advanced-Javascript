@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+             background: gray url('wallpaper006.jpg') center center  fixed;
+             background-size: cover;
+             margin: 0;
+             padding: 0;
+         }
+         h1 {
+             background-color: lightblue;
+             text-align: center;
+             margin: 0;
+             padding: 10px;
+             color: white;
+             font-size: 30px;
+             font-family: Arial, Helvetica, sans-serif;
+         }
+         .boxes {
+             position: relative;
+             left: 5px;
+             background-color: lightblue;
+             width: 200px;
+             height: 155px;  
+             margin-right: 3px;
+             margin-top: 20px;
+             display: inline-block;
+         }
+         #addmoreboxes {
+             position: fixed;
+             left: 95%;
+             bottom: 8px;
+             background-color: blue;
+             color: white;
+             font-family: Arial, Helvetica, sans-serif;
+             font-weight: bolder;
+             padding: 10px;
+             border-radius: 10px;
+             cursor: pointer;
+         }
+         #addmoreboxes:hover {
+             background-color: mediumspringgreen;
+         }
+         #addmoreboxes:active {
+             background-color: lightskyblue;
+             border: 1px solid blue;
+         }
+    </style>
+</head>
+<body>
+    <h1>Using EventLiseners!!!</h1>
+    <div id="mainboxe">
+        
+    </div>
+    <div id="addmoreboxes">Add</div>
+    <script src="main.js"></script>
+</body>
+</html>
