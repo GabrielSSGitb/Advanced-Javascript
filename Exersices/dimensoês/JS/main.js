@@ -16,9 +16,9 @@ function backtotop() {
     });
 }
  /* 
-  the offsetheight and offsetwidth calculates the element´sheight and width.
+  the offsetheight and offsetwidth calculates the element´sheight and width, including the scroll.
   the clientwidth and clientheight doesn´t take the scroll of the element, just the content and padding.
-  the scrollheight and scrollwidth takes only the content with padding and margin, but doesn´t take the scroll
+  the scrollheight and scrollwidth takes only the content with padding and margin, but doesn´t take the scroll or border.
   
  function sumirbotão() {
     if(window.scrollY == 0) {
