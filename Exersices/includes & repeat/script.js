@@ -6,3 +6,4 @@ let numbers = [9,23,44,99];
 console.log(numbers.includes(44));
 
 let msg = "I love coding ";
+console.log(msg.repeat(30));
