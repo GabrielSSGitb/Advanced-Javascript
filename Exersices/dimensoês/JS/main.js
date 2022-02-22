@@ -4,7 +4,8 @@
      if(window.scrollY == 0) {
         document.querySelector('.backtotop').style.display= 'none';
      }else {
-        document.querySelector('.backtotop').style.display= 'block';
+        //document.querySelector('.backtotop').style.display= 'block';
+        alert('ok');
      }
 })
    };
