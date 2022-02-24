@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="mudartext">Welcome!</h1>
+    <input type="button" value="Mudar Texto" onclick="mudatesto()">
+</body>
+</html>
+
+<script>
+    function mudatesto() {
+      let array = ['Ovo', 'Pão de batata', 'manga'];
+      let mudartext = document.querySelector('#mudartext');
+      //mudartext.innerHTML = array.toString();
+      // array.pop();
+      // array.shift();
+
+      array.push('Pizza');
+      array[0] = 'Ovos'
+      array[3] = 'Geladeira Gamer'
+     array[ array.length ] = 'Kid bengala'
+      mudartext.innerHTML= array.join(' - ');
+      console.log(array);
+    };
+    /*
+    O tostring() poe uma virgula depois de transformar o array!
+    o join() colocar oque vc inserir nele!
+    o array.pop() remove o ultimo item do array!
+    e o shift() remove o primeiro!!
+    */
+</script>
