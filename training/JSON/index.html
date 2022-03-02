@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON training</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Register</h1>
+    <div id="form">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
+     
+      <label for="lastname">Lastname:</label>
+      <input type="text" name="last" id="lastname">
+      <br>
+      <label for="cpf">CPF:</label>
+      <input type="text" name="cpf" id="cpf">
+
+      <label for="birthday">birthday</label>
+      <input type="date" name="birth" id="birthday">
+      <br>
+     
+      <label for="rg">RG:</label>
+      <input type="text" name="rg" id="rg">
+
+      <label for="credit">Credit Card:</label>
+      <input type="text" name="credit" id="credit">
+      <br>
+      <button onclick="Processdata.data()">Register</button>
+    </div>
+    <div class="hiddenmsg">
+      <h3>Something went wrong!</h3>
+      <p id="pm"></p>
+      <span id="closebutton">X</span>
+    </div>
+</body>
+</html>
