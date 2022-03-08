@@ -10,45 +10,44 @@ class processdata {
      return this.verify(savedata);
     };
     verify(savedata) {
-        var box = document.querySelector('.hiddenmsg');
-        var h3 = document.createElement('h3');
-        var p = document.createElement('p');
-        var span = document.createElement('span');
-        console.log(savedata);
-     if(savedata.name == '' || savedata.lastname == '') {
-         h3.textContent= `Something Went Wrong!!!`;
-         p.textContent= `Please, Inform your name!`;
-         span.textContent= `x`;
+       var box = document.querySelector('.hiddenmsg');
+       let h3 = document.createElement('h3');
+       let p = document.createElement('p');
+       let span = document.createElement('span');
+       h3.textContent= `Something went wrong!!!`;
+       span.textContent= `x`;
+       if(savedata.name == '') {
+          p.textContent= `Please, inform your name!`;
+          return this.msg(box, h3, p, span);
+       }else if(savedata.lastname == '') {
+         p.textContent= `Please, inform your lastname!`;
          return this.msg(box, h3, p, span);
-     }else if(savedata.birth == '') {
-        h3.textContent= `Something went Wrong!!!`;
-        p.textContent= `Please, inform your birth to continue!`;
-        span.textContent= `x`;
-        return this.msg(box, h3, p, span);
-     }else if(savedata.cpf == '' ||  savedata.cpf > 11 || savedata.cpf < 11) {
-        h3.textContent= `Something went Wrong!!!`;
-        p.textContent= `CPF camp is invalid!`;
-        span.textContent= `x`;
-        return this.msg(box, h3, p, span);
-     }else if(savedata.rg == '' || savedata.rg > 8 || savedata.rg < 8) {
-        h3.textContent= `Something went Wrong!!!`;
-        p.textContent= `RG camp is invalid!`;
-        span.textContent= `x`;
-        return this.msg(box, h3, p, span);
-     }else if(savedata.credit == '' || savedata.credit > 16) {
-        h3.textContent= `Something went Wrong!!!`;
-        p.textContent= `Please, inform your credit card!`;
-        span.textContent= `x`;
-        return this.msg(box, h3, p, span);
-     }
+       }else if(savedata.cpf == '' || savedata.cpf.length < 11 || savedata.cpf.length > 11) {
+         p.textContent= `The CPF camp is invalid!`;
+         return this.msg(box, h3, p, span);
+       }else if(savedata.birth == '') {
+         p.textContent= `Please, inform your birth date!`;
+         return this.msg(box, h3, p, span);
+       }else if(savedata.rg == '' || savedata.rg.length < 8 || savedata.rg.length > 8) {
+         p.textContent= `The RG camp is invalid!`;
+         return this.msg(box, h3, p, span);
+       }else if(savedata.credit == '' || savedata.credit.length < 16 || savedata.credit.length > 16) {
+         p.textContent= `The Credit Card camp is invalid!`;
+         return this.msg(box, h3, p, span);
+       }else {
+          return this.info(savedata);
+       }
+    };
+    info(savedata) {
+     let table = document.createElement('table');
     };
     msg(box, h3, p, span) {
-      box.classList.remove("hiddenmsg");
-      box.classList.add("msg");
+      box.classList.remove('hiddenmsg');
+      box.classList.add('msg');
       box.appendChild(h3);
       box.appendChild(p);
       box.appendChild(span);
-      return this.closemsg(box, h3, p, span)
+      return this.closemsg(box, h3, p, span);
     };
     closemsg(box, h3, p, span) {
       span.addEventListener('click', () => {
