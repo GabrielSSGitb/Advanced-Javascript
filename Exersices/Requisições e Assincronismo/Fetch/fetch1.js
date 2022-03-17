@@ -5,7 +5,7 @@ function loaposts() {
     return result.json(); //This is a Promise!!!
   })
   .then((json) => {
-    document.getElementById('posts').innerHTML=`${json[0].email} e outras ${json.length - 1} pessoas, comentarão no seu site!`;
+    document.getElementById('posts').innerHTML=`${json[0].email} and others ${json.length - 1} people, commeted on your website!`;
     console.log(json)
   })
   .catch((error) => console.log('ERROR'))
