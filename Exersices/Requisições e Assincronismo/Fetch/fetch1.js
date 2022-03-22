@@ -5,7 +5,8 @@ function loaposts() {
     return result.json(); //This is a Promise!!!
   })
   .then((json) => {
-    document.getElementById('posts').innerHTML=`${json[0].email} and others ${json.length - 1} people, commeted on your website!`;
+    let getemail = Math.floor(Math.random()*500);
+    document.getElementById('posts').innerHTML=`${json[getemail].email} and others ${json.length - 1} people, commeted on your website!`;
     console.log(json)
   })
   .catch((error) => console.log('ERROR'))
