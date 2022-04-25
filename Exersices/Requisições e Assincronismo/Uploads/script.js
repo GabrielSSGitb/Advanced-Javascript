@@ -1,8 +1,8 @@
 async function upload() {
-    let inputf = document.querySelector('#files').files;
-    var body = new FormData;
-    body.append("Title", "File Uploader");
-    body.append("File", inputf);
-    let req = await fetch('https://jsonplaceholder.typicode.com/posts',{method: "POST"});
-    console.log(inputf);
+  var file = document.querySelector("#files").files[0];
+  let body = new FormData();
+  body.append("title", "Uploading file");
+  body.append("file", file);
+  let req = await fetch('https://brutaldeveloper.mysite.com/posts', {method: "POST", body: body, headers: {'Content-Type': 'multipart/form-data'}});
+ console.log(req)
 };
