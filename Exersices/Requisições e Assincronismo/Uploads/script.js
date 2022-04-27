@@ -1,8 +1,8 @@
 async function upload() {
-  var file = document.querySelector("#files").files[0];
-  let body = new FormData();
-  body.append("title", "Uploading file");
-  body.append("file", file);
-  let req = await fetch('https://brutaldeveloper.mysite.com/posts', {method: "POST", body: body, headers: {'Content-Type': 'multipart/form-data'}});
- console.log(req)
+  let fileinput = document.querySelector('#files');
+  let form = new FormData();
+  form.append("tittle", "Uploading file");
+  form.append("File", fileinput);
+  let reg = await fetch('https://www.brutaldeveloper.com.br', {method: "POST", body: form, headers: {'Content-type': 'multipart/form-data'}});
+  console.log(reg);
 };
