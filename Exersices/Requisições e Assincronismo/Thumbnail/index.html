@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thumbnail</title>
-</head>
-<body>
-    <input type="file" accept="image/*" id="image">
-    <button onclick="show()">Show</button>
-    <div id="thumbnail"></div>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+</head>
+<body onload="Upthumbnail.load()">
+    <div id="thumb"></div>
+    <div id="content">
+        <h1>Upload Thumbnail</h1>
+        <p>Select the image and click on the button bellow:</p>
+        <input type="file" accept="image/*" id="image">
+        <button id="upload">Upload Thumbnail</button>
+    </div>
+        <h1 class="msg">Sending to the Cloud....</h1>
+        <button id="send">Upload to cloud</button>
+        <button id="remove">Remove</button>
 </body>
 </html>

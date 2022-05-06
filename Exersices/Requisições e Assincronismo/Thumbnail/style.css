@@ -1,0 +1,90 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(27, 27, 27);
+}
+#thumb {
+    position: absolute;
+    top: 80px;
+    left: 15px;
+    background-color: gray;
+    width: 50vw;
+    height: 50vh;
+}
+#content {
+    position: relative;
+    top: 80px;
+    left: 725px;
+    color: white;
+}
+h1 {
+    color: rgb(2, 210, 2);
+    margin-bottom: 20px;
+}
+#content p {
+    margin-bottom: 10px;
+}
+button:hover {
+    cursor: pointer;
+}
+#upload{
+    background-color: lawngreen;
+    color: white;
+    border: 1px solid lawngreen;
+    padding: 5px;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+#upload:hover {
+    background-color: green;
+    border: 1px solid green;
+}
+#upload:active {
+    background-color: lightgreen;
+}
+.msg {
+    display: none;
+    padding-left: 850px;
+    padding-top: 100px;
+}
+#send {
+    display: none;
+    background-color: lawngreen;
+    color: white;
+    border: 1px solid lawngreen;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bolder;
+    width: 20vw;
+    position: relative;
+    top: 100px;
+    left: 900px;
+}
+#send:hover {
+    background-color: green;
+    border: 1px solid green;
+}
+#remove { 
+    display: none;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bolder;
+    width: 20vw;
+    position: relative;
+    top: 120px;
+    left: 900px;
+}
+#remove:hover {
+    background-color: rgb(91, 0, 0); 
+    border: none;
+}
+#remove:active {
+    background-color: rgb(255, 75, 75); 
+    border: none;
+}
