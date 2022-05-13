@@ -8,6 +8,7 @@ class upthumbnail {
     var inputimg = document.querySelector('#image').files[0];
     var img = document.createElement('img');
     img.src= URL.createObjectURL(inputimg);
+    img.width= 700;
     document.querySelector('#thumb').appendChild(img);
     document.querySelector('#content').style.display='none';
     document.querySelector('#send').style.display='block';
