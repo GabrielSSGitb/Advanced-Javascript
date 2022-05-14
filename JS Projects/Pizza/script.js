@@ -6,8 +6,10 @@ class pizza {
   };
   load() {
     var pizzas = document.querySelectorAll('.pizza-container');
-     for(let i = 1; i <= pizzas.length; i++) {
+     for(let i = 0; i <= pizzas.length; i++) {
          this.id += 1;
+         pizzas[i].classList.remove('pizza-container');
+         pizzas[i].classList.add(this.id);
      };
   };
 };
