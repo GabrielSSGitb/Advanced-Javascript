@@ -9,11 +9,31 @@
 body {
     background-color: white;
 }
-
-nav h1 {
-  margin-top: 20px;
-  margin-left: 20px;
-  font-size: xx-large;
+aside {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #FA6C00;
+    width: 30vw;
+    height: 100vh;
+    color: white;
+}
+.list {
+    
+}
+.list .pname {
+    position: relative;
+    top: -25px;
+    left: 50px;
+    font-family: 'Koulen', cursive;
+    font-size: 20px;
+}
+.list img {
+    position: relative;
+    top: 15px;
+    left: 5px;
+    width: 3vw;
 }
 section {
     position: relative;
@@ -23,32 +43,32 @@ section {
 section img {
     width: 20vw;
 }
-.pizza-container  {
+section div {
     display: inline-block;
     margin-right: 10vw;
     margin-bottom: 20vh;
 }
-.pizza-container h2 {
+section h2 {
     position: relative;
     top: 310px;
     text-align: center;
     font-family: 'Koulen', cursive;
     font-size: 30px;
 }
-.pizza-container .price {
+section .price {
    position: relative;
    top: 310px;
    left: 100px;
    font-family: 'Koulen', cursive;
 }
-.pizza-container .text {
+section .text {
    position: relative;
    top: 80px;
    left: 25px;
    line-height: 25px;
    font-family: 'Josefin Sans', sans-serif;
 }
-.pizza-container button {
+section button {
     position: relative;
     top: 100px;
     left: 30px;
@@ -62,10 +82,10 @@ section img {
     width: 17vw;
     border-radius: 10px;
 }
-.pizza-container button:hover {
+section button:hover {
     background-color: #A90931;
     cursor: pointer
 }
-.pizza-container button:active {
+section button:active {
     background-color: #8A1F07;
 }
