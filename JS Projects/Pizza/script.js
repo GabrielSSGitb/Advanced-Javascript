@@ -1,8 +1,11 @@
 class pizza {
   constructor() {
     this.id= 0;
-    this.price = 0;
-    this.name= '';
+  this.pizzaslist = [
+    {id: 0, name: "Mussarela", price: 0}, {id: 0, name: "Calabreza", price: 0},
+    {id: 0, name: "Champignon", price: 0}, {id: 0, name: "Cinco Queijos"},
+    {id: 0, name: "Frango", price: 0}, {id: 0, name: "Bolonhesa", price: 0}
+  ];
   };
   load() {
     var pizzas = document.querySelectorAll('.pizza-container');
