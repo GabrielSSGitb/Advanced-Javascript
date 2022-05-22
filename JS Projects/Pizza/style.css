@@ -9,18 +9,46 @@
 body {
     background-color: white;
 }
+header {
+    background-color: #F7600C;
+    height: 80px;
+}
+div#links {
+    position: absolute;
+    right: 20px;
+}
+#links a {
+    position: relative;
+    top: 20px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
 aside {
     display: none;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #FA6C00;
+    background-color: #F7600C;
     width: 30vw;
     height: 100vh;
     color: white;
 }
-.list {
-    
+aside h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+.list  {
+   position: relative;
+   top: 30px;
+}
+.list img {
+    position: relative;
+    top: 15px;
+    left: 5px;
+    width: 3vw;
 }
 .list .pname {
     position: relative;
@@ -29,11 +57,15 @@ aside {
     font-family: 'Koulen', cursive;
     font-size: 20px;
 }
-.list img {
+.list .fa-plus {
     position: relative;
-    top: 15px;
-    left: 5px;
-    width: 3vw;
+    top: -50px;
+    left: 300px;
+}
+.list .fa-minus {
+    position: relative;
+    top: -50px;
+    left: 310px;
 }
 section {
     position: relative;
@@ -41,7 +73,8 @@ section {
     left: 50px;
 }
 section img {
-    width: 20vw;
+    width: 200px;
+    padding-left: 40px;
 }
 section div {
     display: inline-block;
@@ -50,7 +83,7 @@ section div {
 }
 section h2 {
     position: relative;
-    top: 310px;
+    top: 280px;
     text-align: center;
     font-family: 'Koulen', cursive;
     font-size: 30px;
@@ -72,20 +105,21 @@ section button {
     position: relative;
     top: 100px;
     left: 30px;
-    background-color: #D40D0B;
+    background-color: #ED3B0C;
     font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
     font-weight: 600;
     border: none;
     color: white;
     padding: 10px;
-    width: 17vw;
+    width: 200px;
     border-radius: 10px;
 }
 section button:hover {
-    background-color: #A90931;
+    background-color: #F7A00C;
+    transition: 0.2s ease-in;
     cursor: pointer
 }
 section button:active {
-    background-color: #8A1F07;
+    background-color: #EDB00C;
 }
