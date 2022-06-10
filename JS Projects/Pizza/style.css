@@ -83,21 +83,23 @@ section div {
 }
 section h2 {
     position: relative;
-    top: 280px;
+    top: 10px;
+    left: 15px;
     text-align: center;
     font-family: 'Koulen', cursive;
     font-size: 30px;
 }
-section .price {
+div.pizza-container .price {
    position: relative;
-   top: 310px;
-   left: 100px;
+   top: -90px;
+   left: 200px;
    font-family: 'Koulen', cursive;
+   font-weight: bolder;
+   font-size: 20px;
 }
 section .text {
    position: relative;
-   top: 80px;
-   left: 25px;
+   
    line-height: 25px;
    font-family: 'Josefin Sans', sans-serif;
 }

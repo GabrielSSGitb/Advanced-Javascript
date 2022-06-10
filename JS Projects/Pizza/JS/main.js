@@ -2,7 +2,7 @@ import {pizzaslist} from "./pizzas.js";
 class pizza {
    constructor() {
      this.id= 0;
-   };
+   }
    start() {
     for(let i in pizzaslist) {
       this.id+= 1;
@@ -12,15 +12,23 @@ class pizza {
    };
    create() {
     for(let i in pizzaslist) {
-      let section = document.querySelector('#content');
-      let container = document.createElement('div');
-      let h2 = document.createElement('h2');
-      let price = document.createElement('p');
-      let text = document.createElement('p');
-      let button = document.createElement('button');
+      var section = document.querySelector('#content');
+      var container = document.createElement('div');
+      var img = document.createElement('img');
+      var h2 = document.createElement('h2');
+      var price = document.createElement('p');
+      var text = document.createElement('p');
       container.classList.add('pizza-container');
       price.classList.add('price');
-      text.classList.add('text');
+      text.classList.add('text')
+      img.src= pizzaslist[i].img;
+      h2.textContent= pizzaslist[i].name;
+      price.textContent= `R$ ${pizzaslist[i].price}`;
+      text.textContent= this.text;
+      container.appendChild(img);
+      container.appendChild(h2);
+      container.appendChild(price);
+      container.appendChild(text);
       section.appendChild(container);
     };
    };
