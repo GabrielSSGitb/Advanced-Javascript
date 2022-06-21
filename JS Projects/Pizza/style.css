@@ -13,23 +13,40 @@ header {
     background-color: #F7600C;
     height: 80px;
 }
-div#links {
+div#link {
     position: absolute;
     right: 20px;
 }
-#links a {
+div#link:hover {
+    cursor: pointer;
+}
+.fa-pizza-slice {
     position: relative;
     top: 20px;
-    margin-right: 10px;
     color: white;
-    text-decoration: none;
+    font-size: 25px;
+}
+.fa-pizza-slice:hover {
+    color: #EDAA00;
+}
+.countlist {
+    position: relative;
+    right: 20px;
+    top: 40px;
+    color: white;
+    background-color: #9a1c00;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 20px;
 }
 aside {
     display: none;
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #F7600C;
+    background-color: #EDAA00;
     width: 30vw;
     height: 100vh;
     color: white;
@@ -42,30 +59,12 @@ aside h1 {
 }
 .list  {
    position: relative;
-   top: 30px;
+   top: 40px;
+   display: inline-block;
 }
-.list img {
-    position: relative;
-    top: 15px;
-    left: 5px;
-    width: 3vw;
-}
-.list .pname {
-    position: relative;
-    top: -25px;
-    left: 50px;
+table td {
     font-family: 'Koulen', cursive;
-    font-size: 20px;
-}
-.list .fa-plus {
-    position: relative;
-    top: -50px;
-    left: 300px;
-}
-.list .fa-minus {
-    position: relative;
-    top: -50px;
-    left: 310px;
+    font-size: 22px;
 }
 section {
     position: relative;
@@ -78,7 +77,7 @@ section img {
 }
 section div {
     display: inline-block;
-    margin-right: 10vw;
+    margin-right: 13vw;
     margin-bottom: 20vh;
 }
 section h2 {
@@ -98,14 +97,14 @@ div.pizza-container .price {
    font-size: 20px;
 }
 section .text {
-   position: relative;
-   
+   text-align: center;
    line-height: 25px;
    font-family: 'Josefin Sans', sans-serif;
+   max-width: 232px;
 }
 section button {
     position: relative;
-    top: 100px;
+    top: 50px;
     left: 30px;
     background-color: #ED3B0C;
     font-family: 'Ubuntu', sans-serif;
