@@ -2,7 +2,6 @@ import {pizzaslist} from "./pizzas.js";
 class pizza {
    constructor() {
      this.id= 0;
-     this.buttonid = 0;
    }
    start() {
     for(let i in pizzaslist) {
@@ -13,8 +12,6 @@ class pizza {
    };
    create() {
     for(let i in pizzaslist) {
-      this.buttonid+= 1;
-
       var section = document.querySelector('#content');
       var container = document.createElement('div');
       var img = document.createElement('img');
@@ -26,20 +23,20 @@ class pizza {
       container.classList.add('pizza-container');
       price.classList.add('price');
       text.classList.add('text');
-      button.classList.add(this.buttonid);
-      this.list(button);
+      button.classList.add(pizzaslist[i].id);
 
-      button.textContent= 'Add in the List';
       img.src= pizzaslist[i].img;
       h2.textContent= pizzaslist[i].name;
       price.textContent= `R$ ${pizzaslist[i].price}`;
       text.textContent= "This Pizza it´s insane because it´s pretty damm good, incredible, buy it you are not gonna regret it!";
+      button.textContent= `Add to menu`;
       container.appendChild(img);
       container.appendChild(h2);
       container.appendChild(price);
       container.appendChild(text);
       container.appendChild(button);
       section.appendChild(container);
+      return this.buttonsevent();
     };
    };
    events() {
@@ -50,7 +47,7 @@ class pizza {
       document.querySelector('aside').style.display='block';
       document.querySelector('section').style.maxWidth='80vw';
    };
-   list(button) {
+   buttonsevent() {
     
    };
 };
