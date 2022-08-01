@@ -29,18 +29,6 @@ div#link:hover {
 .fa-pizza-slice:hover {
     color: #EDAA00;
 }
-.countlist {
-    position: relative;
-    right: 20px;
-    top: 40px;
-    color: white;
-    background-color: #9a1c00;
-    font-size: 14px;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    border-radius: 20px;
-}
 aside {
     display: none;
     position: fixed;
