@@ -27,8 +27,9 @@ class pizza {
       text.classList.add('text');
       btn.classList.add(item.id);
       btn.addEventListener('click', () => {
-        const elselected = [{name: item.name, price: item.price}];
-         return this.opennav(elselected);
+        const pname = item.name;
+        const pprice = item.price
+        return this.opennav(pname, pprice);
       });
 
       container.appendChild(img);
@@ -38,24 +39,8 @@ class pizza {
       section.appendChild(container);
      });  
    };
-   opennav(elselected) {
-      get('aside').style.display='block';
-      get('section').style.maxWidth= '80vw';
+   opennav(pname, pprice) {
 
-      var menulist = document.createElement('div');
-      var pizzaname = document.createElement('p');
-      var pricelist = document.createElement('p');
-      var plussign = document.createElement('i');
-      var minussign = document.createElement('i');
-      var asidebtn = document.createElement('button');
-
-      menulist.classList.add('list');
-      pizzaname.classList.add('pizzaname');
-      pricelist.classList.add('pricelist');
-      plussign.classList.add('fa-solid fa-plus');
-      minussign.classList.add('fa-solid fa-minus');
-
-      get('aside').appendChild(menulist);
   };
 };
 var Pizza = new pizza;
