@@ -14,34 +14,34 @@ class pizza {
       let section = get('#content');
       let container = document.createElement('div');
       let img = document.createElement('img');
+      let price = document.createElement('p');
       let h2 = document.createElement('h2');
       let text = document.createElement('p');
       let btn = document.createElement('button');
 
       img.src= item.img;
       h2.textContent= item.name;
+      price.textContent= `R$ ${item.price.toFixed(2)}`;
       text.textContent= "This Pizza it´s insane because it´s pretty damm good, incredible, buy it you are not gonna regret it!";
       btn.textContent= "Add to menu";
 
       container.classList.add('pizza-container');
+      price.classList.add('price');
       text.classList.add('text');
       btn.classList.add(item.id);
       btn.addEventListener('click', () => {
-        const pname = item.name;
-        const pprice = item.price
-        return this.opennav(pname, pprice);
+          this.menulist= [item.name, item.img];
+          return this.opennav();
       });
 
       container.appendChild(img);
+      container.appendChild(price);
       container.appendChild(h2);
       container.appendChild(text);
       container.appendChild(btn);
       section.appendChild(container);
-     });  
+     });
    };
-   opennav(pname, pprice) {
-
-  };
 };
 var Pizza = new pizza;
 Pizza.create();

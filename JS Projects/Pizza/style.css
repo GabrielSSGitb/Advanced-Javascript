@@ -30,7 +30,6 @@ div#link:hover {
     color: #EDAA00;
 }
 aside {
-    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -61,6 +60,11 @@ aside h1 {
 .list:hover {
     border: 1px solid white;
     cursor: pointer;
+}
+.mini-pizza {
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 .list .pizzaname {
     margin-left: 10px;
@@ -112,7 +116,7 @@ section div {
 }
 section h2 {
     position: relative;
-    top: 5px;
+    top: -40px;
     left: 15px;
     text-align: center;
     font-family: 'Koulen', cursive;
@@ -120,8 +124,8 @@ section h2 {
 }
 div.pizza-container .price {
    position: relative;
-   top: -90px;
-   left: 200px;
+   top: 40px;
+   left: 100px;
    font-family: 'Koulen', cursive;
    font-weight: bolder;
    font-size: 20px;
@@ -153,4 +157,10 @@ section button:hover {
 }
 section button:active {
     background-color: #EDB00C;
+}
+.pizzaoptions {
+    position: fixed;
+    left: 300px;
+    max-width: 500px;
+    background-color: white;
 }
