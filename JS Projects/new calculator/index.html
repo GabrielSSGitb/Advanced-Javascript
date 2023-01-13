@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JS/main.js"></script>
+</head>
+<body>
+    <div id="calculator">
+        <input type="number" name="showvalue" id="showvalue">
+        <input type="number" name="showresult" id="showresult">
+
+        <div id="numbers">
+            <div class="num" onclick="Calculator.insert('1')">1</div>
+            <div class="num" onclick="Calculator.insert('2')">2</div>
+            <div class="num" onclick="Calculator.insert('3')">3</div>
+            <div class="num" id="clear" onclick="Calculator.clear()">C</div>
+        </div>
+    </div>
+</body>
+</html>
