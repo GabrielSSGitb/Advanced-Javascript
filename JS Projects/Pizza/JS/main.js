@@ -31,7 +31,7 @@ class pizza {
       btn.classList.add(item.id);
       btn.addEventListener('click', () => {
           this.menulist= [item.name, item.img];
-          return this.opennav();
+          return this.opennav(item.name, item.img);
       });
 
       container.appendChild(img);
@@ -41,6 +41,9 @@ class pizza {
       container.appendChild(btn);
       section.appendChild(container);
      });
+   };
+   opennav(itemname, itemimg) {
+      
    };
 };
 var Pizza = new pizza;
