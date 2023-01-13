@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+#calculator {
+    background-color: black;
+    position: fixed;
+    top: 10vh;
+    left: 35vw;
+    height: 500px;
+    width: 400px;
+    border-radius: 50px;
+}
+input {
+    display: block;
+    margin-left: 200px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+#numbers {
+    margin-left: 20px;
+}
+.num {
+    background-color: gray;
+    color: white;
+    width: 15px;
+    padding: 20px;
+    display: inline-block;
+    margin-top: 90px;
+    margin-left: 5px;
+}
+.num:hover {
+    cursor: pointer;
+}
+#clear {
+    background-color: rgb(219, 142, 0);
+    margin-left: 30px;
+    border-radius: 20px;
+}
