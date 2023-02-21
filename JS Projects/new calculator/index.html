@@ -15,13 +15,27 @@
         <input type="number" name="shown2" id="shown2">
         <input type="number" name="showresult" id="showresult">
 
+        <div id="funcs">
+            <div class="num" id="clear" onclick="Calculator.clear()">C</div>
+            <div class="num" id="divide" onclick="Calculator.insertfunc('÷')">÷</div>
+            <div class="num" id="multiply" onclick="Calculator.insertfunc('x')">x</div>
+            <div class="num" id="subtraction" onclick="Calculator.insertfunc('-')">-</div>
+            <div class="num" id="addup" onclick="Calculator.insertfunc('+')">+</div>
+            <div class="num" id="equal">=</div>
+        </div>
+
         <div id="numbers">
             <div class="num" onclick="Calculator.insert('1')">1</div>
             <div class="num" onclick="Calculator.insert('2')">2</div>
             <div class="num" onclick="Calculator.insert('3')">3</div>
-
-            <div class="num" id="clear" onclick="Calculator.clear()">C</div>
-            <div class="num" id="divide" onclick="Calculator.insertfunc('÷')">÷</div>
+            <br>
+            <div class="num" onclick="Calculator.insert('4')">4</div>
+            <div class="num" onclick="Calculator.insert('5')">5</div>
+            <div class="num" onclick="Calculator.insert('6')">6</div>
+            <br>
+            <div class="num" onclick="Calculator.insert('7')">7</div>
+            <div class="num" onclick="Calculator.insert('8')">8</div>
+            <div class="num" onclick="Calculator.insert('9')">9</div>
         </div>
     </div>
 </body>
